@@ -1,0 +1,14 @@
+#two type creation of array
+#first type ---->
+from array import *
+ary1 = array('i', [1,2,3,4,56])
+print(type(ary1))# this show this is array
+for i in ary1:
+    print(i)
+
+#second type creation of array
+import array
+ary2= array.array('i',[1,2,3,4,5,6])
+print(type(ary2))
+for i in ary2:
+    print(i)
