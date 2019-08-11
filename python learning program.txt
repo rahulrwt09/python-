@@ -1,0 +1,634 @@
+                                               python program basic examples
+1----->
+name = input("enter your name")
+choice= input("if you are male press M else press F")
+if choice=='M' :
+   var = name[-1::-1]
+   print("Mr",var)
+elif choice =='F':
+    var2 = name[-1::-1]
+    print("Mrs",var2)
+else:
+    print("invaild input in male or femail")
+
+
+2----->
+
+#------>python to check extension
+i = input("enter the file")
+extns = i.split(".")
+print(repr(extns))
+
+
+3------>
+#print calender input by user
+import calendar
+y = int(input("enter the year:"))
+m= int(input("enter the month"))
+print(calendar.month(y, m))
+
+4------>
+ #reverse user full name using python
+fname = input("enter the first name")
+lname= input("enter the last name")
+fname,lname= fname[-1::-1], lname[-1::-1]
+print(fname,lname)
+
+
+
+5----->
+# create 2d array insert data in 2d array
+t = [[1,2,3,4,5], [3,4,5,6,7],[3,4,5,6,7], [4,3,5,2,5]]
+for i in t:
+    for j in i:
+        print(j, end= "")
+    print("\n")
+
+
+5------->
+#check file is already exist in os or not
+#create folder in cwd
+#check cwd
+#create file
+import  os
+print(os.getcwd())
+os.mkdir('movies')
+print(os.path.exists('movies'))
+open('file.txt','a')
+
+
+
+6------>
+#print list and  tuple entered from user
+var = input("enter the number")
+num= var.split(',')
+List= list(num); print(List)
+Tuple= tuple(num); print(Tuple)
+
+
+7---->
+#wap a program to take input from user and to print average of number using string formating
+num1,num2,num3= input("enter the number").split(',')
+avr=(int(num1)+int(num2)+int(num3))/3
+print(f"average of entered number is {avr}")
+
+
+8----->
+#use of strip method
+name= "               rahul               "
+dot= "................"
+print(dot+name.strip()+dot)
+
+
+9----->
+#remonamve space between first and last name
+fname =input("enter first name")
+lname= input("enter last name")
+print(fname.rstrip()+lname)
+
+10---->
+#use of replace method
+name = "rahulrawat"
+print(name.replace("r", "a" ,1))
+print(name)
+
+11----->
+#use of while loop and cound how many time it runs
+i=0
+count=0
+while i<=10:
+    print(f"hi {count}")
+    count+=1
+    i+=1
+12------->
+#use of in keyword
+name = 'weffjwifwf'
+if 'w' and 'y' in name:
+    print("hello")
+else:
+    print("bye")
+13-------->
+#check string empty or not
+name ="rahul"
+if name:
+    print("not empty")
+else:
+    print("empty")
+
+
+
+14---->
+def fib(n):
+    a=0
+    b=1
+    if a==1:
+        print(a)
+    elif n<=-1:
+        print("inviald")
+   
+    else:
+        print(a)
+        print(b)
+        for i in range(2,n):
+            c=a+b
+            a=b
+            b=c
+            print(c)
+fib(-3)
+
+
+
+15------->
+#slicling in for loop
+#find odd using for loop
+#find even using for loop
+#find reverse een
+#find reverse odd
+
+for i in range(1,21,2):# print odd 1 to 20
+    print(i)
+
+for i in range(0,21,2):# print even 1 to 20
+    print(i)
+
+for i in range(21,1,-2):#print odd in reverse
+    print(i)
+
+for i in range(20,1,-2):#print even in revers
+    print(i)
+
+
+16----------->
+#insert more then two value
+def rahul(*args):
+    total=0
+    for i in args:
+        total+=i
+    return total
+print(rahul(1,2,3,4,5))
+
+
+#insert more values
+def multiply_args(*args):
+    multiply=1
+    for i in args:
+        multiply*=i
+    return multiply
+print(f"multiply is {multiply_args(1,2,3,4,5,6,7,8,9)}")
+
+
+
+17-------->
+#use *args as a  argument*
+
+
+def multiply_args(*args):
+    multiply=1
+    for i in args:
+      multiply*=i
+    return multiply
+num = [1, 2, 3, 4, 5]
+print(multiply_args(*num))
+
+
+
+18---------->
+#exception handing or error handling 
+while True:
+    try:
+        age=int(input("enter the age"))
+        break
+    except ValueError:
+        print("Invalid input try again")
+if age>=18:
+    print(f"you are adult your age is {age}")
+else:
+    print(f"you are minor your age is {age}")
+
+
+19----------->
+#count lenth of name 
+def add(str1,str2):
+    return str1+str2
+a=input("enter first name")
+b=input("enter second name")
+total= add(a,b)
+print(f"lenth of your name is {len(total)}")
+
+
+20--------->
+#find greatest number
+def greater(a,b):
+    if a>b:
+        print(f" first number {a} is grater")
+    else:
+        print(f"second number {b} is greater")
+a=int(input("enter the first number"))
+b=int(input("enter the second number"))
+great=greater(a,b)
+
+
+
+21------------>
+#print fibonacci series
+
+def fibonaci(n):
+    a=0
+    b=1
+    if n==1:
+        print(a)
+    elif n==2:
+        print(a,b)
+    else:
+        print(a,b, end=" ")
+        for i in range(n-2):
+            c=a+b
+            a=b
+            b=c
+            print(b, end=" ")
+print(fibonaci(50))
+
+
+
+22----->
+#use of default perameter 
+def user(name='unknow',lname='unknown',age=None):
+    
+    print(f"your name is {name}")
+    print(f"your last name is {lname}")
+    print(f"your age is {age}")
+print(user('rahul'))
+
+
+23----->
+#use of global variable
+x=5
+def fun():
+    global x
+    x=x*2
+    return x
+print(fun())
+print(x)
+
+
+24------->
+#insert data in list
+color=[]
+color.append('red')
+color.append('white')
+print(color)
+
+25----->
+#insert data in list using for loop
+fruit= []
+for i in range(1,11):
+ fruit.append('apple')
+ a=fruit
+print(a)
+
+
+
+26------->
+#use of insert method
+f= ['mango', 'apple']
+f.insert(0,'guvava')
+print(f)
+
+#join and list
+f=['mango','apple']
+c=['yellow', 'Green']
+fruit=f+c
+print(fruit)
+#use of extend method to join two method
+f.extend(c)
+c.extend(f)
+print(f)
+print(c)
+#use of append in list
+f.append(f)
+print(f)
+c.append(f)
+print(c)
+
+27----->
+#remove data from list
+f=['orange','apple','pear','banana','guvava']
+f.pop(0)
+print(f)
+#remove method
+f.remove('banana')
+print(f)
+
+28----->
+#keyword in python
+#check element present or not
+f= ['apple','banana']
+if 'applee' in f:
+    print(True)
+else:
+    print(False)
+
+29----->
+#use of count method
+l= [1,2,3,4,5,6,1,1,4,]
+print(l.count(1))
+#use of sort method
+l.sort()
+print(l)
+#use of sorted function
+print(sorted(l))
+
+#copy method(copy the list)
+m=l.copy()
+print(m)
+#clear the list 
+print(m.clear())
+
+
+30------->
+#exersice with name
+name=[]
+name.append('rahul:)')
+name.append('golu')
+name.append('sagar')
+name.append('abhi')
+name.append('shipla')
+name.append('shivani')
+name.append('amit')
+print(name)
+#remove some name from function
+name.remove('amit')
+print(name)
+#add amit name in second position
+name.insert(1,'amit')
+print(name)
+#remove shivani from list using pop and  remove function
+name.remove('shivani') 
+print(name)
+
+
+31------>
+#compare two list
+f1=[1,2,3,4,5]
+f2=[1,2,3,4,5]
+f3=[1,2,3]
+print(f1==f2)
+print(f1==f3)
+
+32---->
+#split method (change string to dict)
+user= "rahul 21".split()
+print(user)
+
+33---->
+#loop in list
+name= ['rahul','akshit','golu','abhishek']
+for i in name:
+    print(i)
+
+34----->
+#list inside list
+matrix= [[1,2,3,4], [1,2,] , [3,4,5]]
+for sublist in matrix:
+    for i in sublist:
+
+        print(i)
+#find element in 2d list
+#list inside list
+matrix= [[1,2,3,4], [1,2,] , [3,4,5]]
+print(matrix[0][2])
+
+
+35------->
+#pass list to a function
+number =[1,2,3,4,5,5,666,]
+def negitive_list(l):
+    negitive=[]
+    for i in l:
+     negitive.append(-i)
+    return negitive
+print(negitive_list(number))
+
+
+36------->
+#square of list
+def square_list(l):
+    square=[]
+    for i in l:
+        square.append(i**2)
+    return square
+num = list(range(1,101))
+print(square_list(num))
+
+37----->
+#reverse the list
+def reverse_list(l):
+   l.reverse()
+   return l
+num =[1,2,3,4,5]
+print(reverse_list(num))
+#reverse the list using list slicing
+def reverse_list(l):
+    return l[::-1]
+print(reverse_list(num))
+
+
+
+38------->
+#filter odd even  in list
+def filter_odd_even(l):
+    odd_num=[]
+    even_num=[]
+    for i in l:
+        if i%2==0:
+            odd_num.append(i)
+
+        else:
+            even_num.append(i)
+    output= [odd_num,even_num]
+    return output
+num =[1,2,3,4,56,7,8,9]
+print(filter_odd_even(num))
+
+ 39----->
+#Recurion(function call it self without loop called recursion)  program in python with sclicing
+#
+# #   type 1
+def print_element(a):
+     if len(a)==0:
+         return
+     else:
+         print(a[0])
+         print_element(a[1:])
+print(print_element([1,2,3,4]))
+
+# #    type 2
+
+def print_element(a,start, end):
+    if start>=end+1:
+        return
+    else:
+        print(a[start])
+        print(print_element(a,start+1, end))
+a=[1,2,3,4,5]
+start=0
+end=len(a)-1
+print_element(a,start,end)
+
+
+40----->
+#print * in python entered by user
+
+num = int(input("enter the number"))
+for i in range(1,num+1):
+    for j in range(1,i+1):
+        print("*", end=" ")
+    print("\n")
+
+
+41----->
+# print number from 1 to 10
+
+for num in range(10):
+    for i in range(num):
+        print(num, end=" ")
+    print("\n")
+
+                                                              ######  python data structure  programe :) #######
+42------>
+#accessing array element
+from array import *
+array1 = array('i', [1,2,3,4,6,7,788,88,6,43])
+print(array1[0])
+print(array1[2])
+print(array1[6])
+
+
+43------>
+# insertion operation in array using  python
+
+from array import *
+array1 =array('i', [1,2,3,4,5])
+array1.insert(0,122)
+print(array1[0])
+# or
+for i in array1:
+  print(i)
+
+44----->
+#deletion opeaarion in array using pyhton
+
+from  array import *
+array1 = array('i', [10,20,30,344,4,4,22,])
+array1.remove(344)
+for i in array1:
+    print(i)
+
+45---->
+# searching in array using pyhton
+
+from  array import *
+arr = array('i', [2,3,4,6])
+print(arr.index(2))
+
+
+
+46---->
+# update in aaray using python
+from array import * 
+arr =array('i', [10,2,3,55,556,23])
+arr[1]=5
+for i in arr:
+    print(i)
+
+
+
+47----->
+# dictinory 
+dict = ['name:rahul', 'lastname:rawat' ]
+for i in dict:
+    print(i)
+
+#access data in list (unordered collection)
+user = dict(name ="rahul", lname="rawat", age = 24)
+print(user['name'])
+
+#dict inside list
+user= dict(name="rahul", lname="rawat", age=21, fav=[1,2,3,4,5])
+print(user['fav'])
+
+#looping and in keyword in dict
+if 'name' in user:
+    print('present')
+else:
+    print('not present')
+
+
+#use of in keyword in dict
+user = dict(name='rahul', lname='rawat', age=23)
+if 'name1' in user:
+    print('yes present')
+else:
+    print("not present")
+
+# loop in dict
+for i in user.values():
+    print(i)
+user = user.values()
+print(type(user))
+
+
+
+
+#                               2D array in dictinory
+  # create a 2d array using python 
+
+#updation in array
+d = [[1,2,43,5,] ,[3,3,4,56,5], [5,6,74,3]]
+d[1]=[1,2,3,4,5,6]
+d[0][1]=5
+for i in d:
+    for j in i:
+        print(i)
+
+# insertion in 2d array using python
+
+from  array import *
+l = [[1,2,3,5] , [2,5,6,8,4] ,['a',6 ,'r']]
+l.insert(2, [0,3,5,6,7,])
+for i in l:
+    for j in i:
+        print(j)
+
+
+
+# deleting in 2d array 
+
+
+from array import * 
+l = [[1,2,3,4], [2,4,6,8]]
+del l[0]
+for i in l :
+ for j in i:
+   print(j)
+print("\n")
+
+
+
+#                      matrix in  python
+# exmaple of matrix in python
+from numpy import *
+a= array([['sun',1,2,3,4],['mon',3,4,5], ['tus',3,4,5], ['wen', 3,4,5,6], ['thr', 3,4,5,], ['fri', 4,45,5],['set', 4,6,7]])
+m= reshape(a,(7))
+print(m)
+# insert element in matrix using python
+from  numpy import *
+a= array([[1,2,3,4], [2,3,4,5], [3,4,5,6]])
+print(a[0])
+print(a[0][1])
+
+
+                                       
+
+
+

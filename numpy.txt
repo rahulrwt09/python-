@@ -1,0 +1,167 @@
+# numpy  programming  in python 
+
+
+
+
+what is numpy -----
+numpy is a python  package its stand for numpy.
+
+why numpy (?? we aslo can use list , tuple)---->
+the main reason of using python numpy is memory efficiency we can set array size in numpy like that c where int and float are popular same numpy make python  like c.
+
+
+
+diffrent between python list  and numpy array
+
+# example 
+import numpy as np
+arr= np.array([[1,2,3,4,5]])
+print(arr.dtype)
+output : int32 
+
+(you will understand wait)
+# first we need how to install numpy 
+cmd>
+pip install numpy
+
+------
+
+#create 1D array using numpy
+
+import numpy as np
+ary = np.array([1,2,3])
+print(ary)
+
+#create more then one D array
+ary=np.array([[1,2,3,4], [1,2,3,4])
+print(ary)
+
+
+
+#check size of array
+print(ary.size)
+
+#check shape of array
+print(ary.shape)
+
+
+#check memory uses of array
+print(ary.dtype)
+
+#create an empty array
+import numpy as np
+emp= np.empty([5,5], dtype= np.int)
+print(emp)
+
+#convert list to array
+import numpy as np
+x= [1,2,3]
+a=np.asarray(x)
+print(a)
+
+
+
+#create floating type  array
+import numpy as np
+x=[1,2,3]
+a=np.asarray(x, np.float32)
+print(a)
+
+#creat array from tuple
+import numpy as np
+x=(1,2,3)
+a= np.asarray(x)
+print(a)
+
+
+
+import numpy as np
+a= (1,2,3,4,5,6,7)
+b= np.asarray(a, np.float32)
+print(b.dtype)
+print(b.size)
+print(b.shape)
+
+
+#create arrayt from tupes not tuple :)
+import numpy as np
+x= [(1,2,4,), (1,2,3)]
+y= np.asarray(x, np.int32)
+
+
+
+import numpy as np
+a= np.linspace(0,20,5, retstep=True)
+print(a)
+#resize the array
+import  numpy as np
+a= np.array([[1,2,3,4], [5,6,7,8]])
+print(a.reshape(4,2))
+
+
+# ndarray.ndim
+import numpy as np
+a =np.arange(24)
+print(a.ndim)
+
+
+
+import numpy as np
+#   for  int8
+a= np.array([1,2,3,4,5],dtype=np.int8)
+print(f"in array each element size is {a.itemsize} for int8")
+#for int 16
+b= np.array([1,2,3,4,5],dtype=np.int16)
+print(f"in array each element size is {b.itemsize} for int16")
+#for int 32
+c= np.array([1,2,3,4,5],dtype=np.int32)
+print(f"in array each element size is {c.itemsize} for int32")
+#for int 64
+d= np.array([1,2,3,4,5],dtype=np.int64)
+print(f"in array each element size is {d.itemsize} for int64")
+
+
+
+
+check each element size for floating value
+
+
+import numpy as np
+d= np.array([1,2,3,4,5],dtype=np.float64)
+print(f"in array each element size is {d.itemsize} for float")
+
+
+import numpy as np
+a= np.zeros((5,), dtype= float)
+print(a)
+print(a.dtype)
+
+import numpy as np
+#convert list to array
+x= [1,2,3,4]
+b= np.array(x)
+print(x)
+print(b.dtype)
+
+#convert tuple to array
+t = (1,2,3,4,5)
+a= np.array(t)
+print(a)
+
+#set dtype in array which create by array
+x= (1,2,3,4,5)
+a= np.array(x, dtype =float)
+print(a)
+#arary list from tuple
+x=[(1,2,3), (3,4,5)]
+b=np.array(x)
+print(b)
+
+
+
+
+
+
+
+
+

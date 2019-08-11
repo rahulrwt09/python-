@@ -1,0 +1,11 @@
+from flask import Flask
+app =Flask(__name__)
+@app.route("/")
+def hello():
+    return "hello world"
+
+                        
+@app.route("/user")
+def user():
+    return "hello user welcome in golubook"
+app.run(debug=True)

@@ -1,0 +1,95 @@
+<html>
+<head>
+    <style>
+    a:link{
+        color:aqua;
+        background-color: transparent;
+        text-decoration:none;
+    }
+    a:visited{
+        color:blue;
+        background-color:transparent;
+        text-decoration: none;
+    }
+    a:hover{
+        color:red;
+        background-color:transparent;
+        text-decoration:underline;
+        
+    }
+    a:active{
+        color:yellow;
+        background-color: transparent;
+        text-decoration: underline;
+    }
+    
+    
+    </style>
+</head>
+<body>
+    <h1>
+        CHECK THE LINK AND TEST it
+    </h1>
+    <a href="http://www.golubook.com" target="_blank">Golubook Home Page </a>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+        <style>
+      a:link, a:visited{
+          background-color:burlywood;
+          color:black;
+          text-align: center;
+          padding:15px   20px;
+          text-align:center;
+          text-decoration: none;
+          display:inline-block; 
+      }
+      a:hover, a:active{
+       
+        background-color: aqua;
+      }         
+        </style>
+  
+<body>
+    <a href="http://www.golubook.com">THIS IS LINK</a>
+</body>
+
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>
+ <a href="http://www.golubook.com" target="_top"> Golubook Home</a>   
+</h1>
+ </html>
+
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>
+ <a href="http://www.golubook.com" target="_blank"> Golubook Home</a>   
+</h1>
+ </html>

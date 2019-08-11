@@ -1,0 +1,34 @@
+# data structure using python 
+
+
+
+#traversel of arry in python
+from array import *
+
+#accessing array element
+arr= array('i', [1,2,3,4,6])
+print(arr[1])
+
+arr1 =array('i', [12,33,34,35,])
+print(arr1[0])
+
+#insertion in array
+arr1.insert(0,50)
+print(arr1)
+
+arr1.insert(0,60)
+for i in arr1:
+    print(i)
+
+
+#deletion from array using python ds
+from array import *
+a= array('i', [1,2,3,5,5,])
+a.remove(1)
+for i in a:
+    print(i)
+
+b= array('b' , [1,3,4,5])
+b.remove(4)
+for i in b:
+    print(i)
