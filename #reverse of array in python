@@ -1,0 +1,6 @@
+  #reverse of array in python
+import array
+rev= array.array('i', [1,3,4,5,7])
+rev.reverse()
+for  i in rev:
+    print(i)
