@@ -1,0 +1,6 @@
+#create array using python range function
+import array
+ary = array.array('i')
+for  i in range(0,10):
+    print(i)
+print(type(ary))
