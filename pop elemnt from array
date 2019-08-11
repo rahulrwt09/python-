@@ -1,0 +1,12 @@
+##pop elemnt from array
+
+from array import *
+ary1 = array('i', [1,2,3,4,56])
+print(type(ary1))
+for i in ary1:
+    print(i)
+print("pop  the elemnet")
+print(ary1.pop(0))
+print("after pop element print array:")
+for i in ary1:
+    print(i)
