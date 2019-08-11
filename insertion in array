@@ -1,0 +1,11 @@
+#insert element in array using python
+import array
+print("before insertion element in array")
+ary = array.array('i',[1,2,3,4,5])
+for i in ary:
+ print(i, end= " ")
+
+print("\n#print after insertion in array ")
+ary.insert(0,10)
+for y in ary:
+    print(y, end=" ")
