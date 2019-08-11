@@ -1,0 +1,6 @@
+#Write a Python program to create an array of 5 integers and display the array items. Access individual element through indexes
+import array
+ary =array.array('i', [12,3,4,5,77])
+for i in ary:
+    print(i)
+print(ary[0])
