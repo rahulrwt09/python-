@@ -1,0 +1,90 @@
+#introduce linked list
+#create node class
+class Node:
+    def __init__(self,data):
+        self.dat=data
+        self.next=None
+#linked list class
+#function to initilize the linked
+#list obj
+def __init__(self):
+    self.head=None
+    
+
+
+
+##new programme
+
+
+#node class
+class Node:
+    def __init__(self, data):
+        self.data=data
+        self.next=None
+#linked list class
+class Linkedlist:
+    def __init__(self):
+       self.head=None
+#code exicution start here
+if __name__=='__main__':
+    llist = Linkedlist()
+    llist.head=Node(1)
+    second= Node(1)
+    third= Node(2)
+llist.head.next= second
+second.next=third
+
+
+
+
+##new programme
+
+
+
+
+class node:
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+class linkedlist:
+    def __init__(self):
+        self.start=None
+    def viewlist(self):
+        if self.start==None:
+            print("list is empty")
+        else:
+            temp = self.start
+            while temp!=None:
+                print(temp.data,end= " ")
+                temp=temp.next
+    def delfirst(self):
+        if self.start==None:
+            print("list is empty")
+        else:
+            self.star=self.start.next
+
+    def insertlast(self,value):
+        newNode=node(value)
+        if(self.start==None)
+            self.start=newNode
+        else:
+            temp=self.start
+            while temp.next!=None:
+                temp=temp.next
+            temp.next=newNode
+mylist= linkedlist()
+mylist. insertlast(10)
+mylist. insertlast(20)
+mylist. insertlast(30)
+mylist. insertlast(40)
+mylist.viewlist()
+mylist.delfirst()
+mylist.viewlist()
+
+
+
+
+##new programme
+
+
+
