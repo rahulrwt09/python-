@@ -85,6 +85,24 @@ mylist.viewlist()
 
 
 ##new programme
-
-
+#Traversing a Linked List
+class Node:
+    def __init__(self,data):
+        self.data=data
+        self.next= None
+class linkedlist:
+    def __init__(self):
+        self.start=None
+    def printlist(self):
+        value= self.start
+        while value is not None:
+            print(value.data)
+            value= value.next
+list1= linkedlist()
+list1.start= Node("rahul")
+e1=Node("rawat")
+e2=Node("golu")
+list1.start.next=e1
+e1.next=e2
+print(list1.printlist())
 
