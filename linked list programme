@@ -106,3 +106,33 @@ list1.start.next=e1
 e1.next=e2
 print(list1.printlist())
 
+
+
+class Node:
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+class  linkedlist:
+    def __init__(self):
+        self.start=None
+#print linked list
+    def listprint(self):
+        printvalue=self.start
+        while printvalue is not None:
+            print(printvalue.data)
+            printvalue= printvalue.next
+    def inser(self, newdata):
+        newnode=Node(newdata)
+#update the value new nodes
+        newnode.next =self.start
+        self.start=newnode
+
+list1=linkedlist()
+list1.start=Node("mon")
+e2=Node("tue")
+e3=Node("wen")
+list1.start.next= e2
+e2.next=e3
+
+list1.inser("sun")
+list1.listprint()
