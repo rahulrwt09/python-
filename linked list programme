@@ -136,3 +136,12 @@ e2.next=e3
 
 list1.inser("sun")
 list1.listprint()
+
+#insert new node in  linked list using pyhton 
+
+   ---->
+   
+   def atbeg(self,newdata):
+        newnode= Node(newdata)
+        newnode.next= self.start
+        self.start=newnode
