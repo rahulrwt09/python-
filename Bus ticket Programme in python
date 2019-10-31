@@ -1,0 +1,73 @@
+def ticket():
+ age = int(input("Enter Your age"))
+ if 0<age<=3:
+  print("Its free for you")
+  a=int(input('Press 1 to cunfirm and 2 to exit'))
+  if a==1:
+      adhhar= input('Enter your addahar number')
+      if (len(adhhar))>12:
+          print("invalid Addar number")
+      elif(len(adhhar))<12:
+          print("invalid adhhar Number")
+      else:
+          print("Registration sucessfull\n")
+          print(f"Nmae:{i}  Age:{age} distance:Chelusain to Dehradun Total cost:Free")
+
+  elif a==2:
+      print("Thanks for booking ")
+      exit()
+
+
+
+
+ elif 3<age<=20:
+    print('Your ticket Price is 100Rupess')
+    b = int(input('Press 1 to cunfirm and 2 to exit'))
+    if b == 1:
+        adhhar = input('Enter your addahar number')
+        if (len(adhhar)) > 12:
+            print("invalid Addar number")
+        elif (len(adhhar)) < 12:
+            print("invalid adhhar Number")
+        else:
+            print("Registration sucessfull\n")
+            print(f"Nmae:{i}  Age:{age} distance:Chelusain to Dehradun Total cost:100 Rupees")
+
+    elif b ==2:
+        print("Thanks for booking ")
+        exit()
+
+
+
+
+
+ elif  age<=0 or age>=100:
+    print("Enter valid age")
+ else:
+    print("Your ticket Price is 120 Ruppes")
+    c= int(input('Press 1 to cunfirm and 2 to exit'))
+    if c == 1:
+        adhhar = input('Enter your addahar number')
+        if (len(adhhar)) > 12:
+            print("invalid Addar number")
+        elif (len(adhhar)) < 12:
+            print("invalid adhhar Number")
+        else:
+            print("Registration sucessfull\n")
+            print(f"Nmae:{i}  Age:{age} distance:Chelusain to Dehradun Total cost:120 Rupees")
+
+    elif c == 2:
+        print("Thanks for booking ")
+        exit()
+
+
+
+i = input("Enter Your Name ")
+print(f"{i.title()}\tWelcome to uttaranchal turisum")
+j= int(input('To book bus chelusain to dehradun Press 1 for cancel press 2'))
+if j==1:
+    ticket()
+elif j==2:
+    exit()
+else:
+    print("Wrong choice")
